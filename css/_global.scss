@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    color: $main-t;
+    font-family: $family;
+    background-color: $white;
+}
+section {
+    padding: 60px 0;
+}
+.container {
+    @media (min-width: 1200px) {
+        margin: 0 100px !important;
+    }
+    @media (min-width: 922px) and (max-width: 1199px) {
+        margin: 0 70px !important;
+    }
+    @media (min-width: 768px) and (max-width: 921px) {
+        margin: 0 50px !important;
+    }
+    margin: 0 30px;
+}
+.pattern {
+    margin-bottom: 40px;
+    h2 {
+        font-size: 40px;
+        font-weight: 600;
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+        color: $g-c;
+    }
+}
+ul {
+    list-style: none;
+}
+input,
+textarea {
+    border: none;
+    outline: none;
+    background: none;
+    transition: .3s;
+}
+a {
+    text-decoration: none;
+    transition: .3s;
+}
+p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+.btn-shape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 15px 30px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: .5px;
+    &.red-bg {
+        background-color: $red;
+        border-color: $red;
+        color: $white;
+        &:hover {
+            border-color: $red-h;
+            background-color: $red-h;
+        }
+    }
+}
+
+.c-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.align-c {
+    display: flex;
+    align-items: center;
+}
+.btw-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.grid-250 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.grid-300 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
